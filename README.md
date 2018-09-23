@@ -45,7 +45,7 @@ public class MyViewHolder extends ViewHolder<MyObject> {
 
 ## Action Binding
 
-###OnClick
+### OnClick
 This action will be bind to the root view of the ViewHolder
 ```
 myAdapter.addAction(new RootClickAction<MyObject>((position, myObject) ->
@@ -53,7 +53,7 @@ myAdapter.addAction(new RootClickAction<MyObject>((position, myObject) ->
 ));
 ```
 
-###OnLongClick
+### OnLongClick
 This action will be bind to the root view of the ViewHolder
 ```
 myAdapter.addAction(new RootLongClickAction<MyObject>((position, myObject) -> {
@@ -62,7 +62,7 @@ myAdapter.addAction(new RootLongClickAction<MyObject>((position, myObject) -> {
 }));
 ```
 
-###Custom binding
+### Custom binding
 You can add your own binding to an view of your ViewHolder
 ```
 public class MyActionAdapter extends AdapterAction<MyObject, MyViewHolder> {
