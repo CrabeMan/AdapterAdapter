@@ -5,16 +5,16 @@ AdapterHelper is a library to try to simplify the usage of the Adapter/ViewHolde
 
 ## Adapter
 ```
-public class FriendsAdapter extends ArrayAdapterHelper<Friend> {
+public class MyAdapter extends ArrayAdapterHelper<MyObject> {
 
-    FriendsAdapter(@NonNull Context context, @NonNull List<Friend> items) {
+    MyAdapter(@NonNull Context context, @NonNull List<MyObject> items) {
         super(context, items);
     }
 
     @NonNull
     @Override
-    public ViewHolder<Friend> getViewHolder() {
-        return new FriendsViewHolder();
+    public ViewHolder<MyObject> getViewHolder() {
+        return new MyViewHolder();
     }
 }
 ```
